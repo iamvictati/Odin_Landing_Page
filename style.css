@@ -10,7 +10,6 @@ html, body {
     color:whitesmoke;
     margin: 0;
     min-height: 100vh; 
-    min-width: 610px; 
     display: flex; 
     flex-direction: column; 
     justify-content: space-between;
@@ -18,14 +17,40 @@ html, body {
 }
 
 .header { 
-    height: 50px; 
     display: flex; 
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0; 
-    padding: 15px 40px; 
-    flex: 1 1 10px;
+    padding: 10px 0px; 
+    /*height: 70px;*/
+    min-height: 70px; 
+    flex-wrap: wrap;
     gap: 20px;
+}
+
+h1{
+    font-weight: 900;
+    color: pink;
+    padding: 0 10px;
+    font-size: 45px;
+    border: 3px solid aliceblue;
+    border-radius: 20px 10px;
+    text-wrap: nowrap; 
+    margin: 0; 
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: lightblue;
 }
 
 
@@ -35,14 +60,12 @@ html, body {
     align-items: center;
     gap: 40px;
     padding: 80px 150px; 
-    min-height: 100px;
-    
 }
 
 .welcome { 
     border-radius: 20px 40px;
     padding: 5px 20px;
-    min-width: 300px;
+    min-width: 200px;
     flex: 2 1 300px;
 }
 
@@ -52,7 +75,8 @@ html, body {
     max-height: 320px; 
     max-width: 320px; 
     border-radius: 30px 60px;
-    flex: 1 3 100px; 
+    flex: 1 3 150px; 
+    border: 3px solid aliceblue;
 }
 
 .container2 {
@@ -61,45 +85,70 @@ html, body {
     align-items: center;
     padding: 20px 100px;
     gap: 20px;
-    flex: 1 1 300px;
+    min-height: 300px;
+    height: 300px; 
+    flex: 1;
 }
 
-.infoimgs {
+.itemcontainer {
     display: flex; 
     justify-content: space-around;
     align-items: center;
     gap: 20px;
     padding: 20px 40px;
     margin-bottom: 10px;
-    flex: 1 1 300px;
-    min-width: 300px; 
+    flex-wrap: wrap; 
 }
 
 .item { 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 10px; 
-    width: 200px;
-    height: 300px;
-    text-align: center;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 .item p { 
     flex-grow: 2;
+    max-width: 250px;
+}
+
+.container2 h3 {
+    text-align: center; 
+}
+
+.container2 img { 
+    max-width: 250px;
+    max-height: 250px; 
+    border: 3px solid aliceblue;
+    flex: 1 3 100px; 
+    border-radius: 30px 20px;
 }
 
 .container3 {
     display: flex; 
     align-items: center; 
     justify-content: space-around;
-    height: 300px;
     padding: 20px 40px;
-    flex: 1 1 300px;
+    min-height: 300px;
+    height: 300px; 
+    flex: 1;
+}
+
+blockquote { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    min-height: 100px;  
+    padding: 20px 40px; 
 }
 
 .quotefooter {
     text-align: right;
+    font-style: italic;
 }
 
 .container4 {
@@ -107,8 +156,9 @@ html, body {
     justify-content: center; 
     align-items: center;
     padding: 40px 40px;
-    flex-basis: 200px;
-    flex: 1 1 300px;
+    min-height: 300px;
+    height: 300px; 
+    flex: 1;
 
 }
 
@@ -117,7 +167,7 @@ html, body {
     justify-content: center;
     align-items: center;
     gap: 50px; 
-    width: 600px;
+    max-width: 600px;
     padding: 10px; 
 }
 
@@ -133,16 +183,6 @@ html, body {
     font-size: 20px;
 }
 
-h1{
-    font-weight: 900;
-    color: pink;
-    padding: 0 10px;
-    flex-shrink: 0;
-    font-size: 45px;
-    border: 3px solid aliceblue;
-    border-radius: 20px 10px;
-}
-
 h2 {
     font-weight: 800;
     font-size: 40px;
@@ -153,38 +193,6 @@ h3 {
     font-size: 30px;
 }
 
-img { 
-    
-    max-width: 300px;
-    max-height: 300px; 
-    border: 3px solid aliceblue;
-    flex: 0 3 100px; 
-    border-radius: 30px 20px;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    text-wrap: nowrap;
-}
-
-a {
-    text-decoration: none;
-    font-size: 20px;
-    color: lightblue;
-}
-
-blockquote { 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    min-width: 600px;
-    max-width: 800px;
-    min-height: 100px;  
-    padding: 20px 40px; 
-}
 
 button { 
     font-family: 'OCR A Std', 'Courier New', monospace;
