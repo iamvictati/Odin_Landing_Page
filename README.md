@@ -4,6 +4,10 @@
 <p>I will create this page following The Odin Project's instructions and tips as well as my own substitutions or modifications. </p>
 <p> :))) </p>
 
-<h2 font-weight="bold">Achieved Outcome</h2>
+<h2 font-weight="bold">Achieved Outcomes</h2>
 
-<img src="./images/localhost_3000_ (3).png">
+<img src="./images/localhost_3000_ (4).png">
+<caption>Almost Full-Screen</caption>
+
+<img src="./images/localhost_3000_ (5).png">
+<caption>Small Screen View</caption>
