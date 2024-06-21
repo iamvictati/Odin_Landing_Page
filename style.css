@@ -1,9 +1,13 @@
 * {
-    border: 1px solid black; 
+    /*border: 1px solid white;*/
 }
 
 html, body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    font-family: 'OCR A Std', 'Courier New', monospace;
+    font-variant: small-caps;
+    font-size: 20px;
+    color:whitesmoke;
     margin: 0;
     min-height: 100vh; 
     min-width: 610px; 
@@ -19,7 +23,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     margin: 0; 
-    padding: 10px 25px; 
+    padding: 15px 40px; 
     flex: 1 1 10px;
     gap: 20px;
 }
@@ -30,45 +34,44 @@ html, body {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 50px 80px; 
+    padding: 80px 150px; 
     min-height: 100px;
-    flex: 1 1 50%;
+    flex: 1 1 300px;
 }
 
 .welcome { 
-    border-radius: 8%;
+    border-radius: 20px 40px;
     padding: 5px 20px;
+    min-width: 200px;
     flex: 2 1 300px;
-    
-    
 }
 
 .welcomeimg {
     min-width: 200px;
     min-height: 200px; 
-    max-height: 350px;
-    max-width: 350px; 
-    border-radius: 50%;
-    flex: 1 2 200px; 
+    max-height: 320px;
+    max-width: 320px; 
+    border-radius: 30px 60px;
+    flex: 1 3 100px; 
 }
 
 .container2 {
     display: flex; 
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    padding: 20px 20px; 
+    padding: 20px 100px;
     gap: 20px;
-    flex-basis: 200px;
-
 }
 
 .infoimgs {
     display: flex; 
     justify-content: space-around;
+    align-items: center;
     gap: 20px;
-    height: 200px; 
-    padding: 20px;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    flex: 1 1 300px;
+    min-width: 300px; 
 }
 
 .item { 
@@ -76,19 +79,31 @@ html, body {
     flex-direction: column;
     justify-content: center;
     padding: 10px; 
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+.item p { 
+    flex-grow: 2;
 }
 
 .container3 {
     display: flex; 
     align-items: center; 
     justify-content: space-around;
-    height: 400px; 
-    flex-basis: 200px;
+    height: 300px;
+    padding: 20px 40px;
+}
+
+.quotefooter {
+    text-align: right;
 }
 
 .container4 {
     display: flex;
     justify-content: center; 
+    align-items: center;
     padding: 40px 40px;
     flex-basis: 200px;
 
@@ -98,7 +113,7 @@ html, body {
     display: flex; 
     justify-content: center;
     align-items: center;
-    gap: 30px; 
+    gap: 50px; 
     width: 600px;
     padding: 10px; 
 }
@@ -107,13 +122,39 @@ html, body {
     display: flex; 
     align-items: center;
     justify-content: center; 
+    height: 40px;
+    background-color: rgb(255, 149, 243);
+    color: darkcyan;
+    font-weight: bold;
 }
 
-h1 {
+h1{
     font-weight: 900;
-    padding: 0;
+    color: pink;
+    padding: 0 10px;
     flex-shrink: 0;
+    font-size: 45px;
+    border: 3px solid aliceblue;
+    border-radius: 20px 10px;
+}
+
+h2 {
+    font-weight: 800;
     font-size: 40px;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+img { 
+    
+    max-width: 300px;
+    max-height: 300px; 
+    border: 3px solid aliceblue;
+    flex: 0 3 100px; 
+    border-radius: 30px 20px;
 }
 
 ul {
@@ -127,24 +168,55 @@ ul {
 a {
     text-decoration: none;
     font-size: 20px;
+    color: lightblue;
 }
 
 blockquote { 
-    width: 600px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    min-width: 600px;
+    max-width: 800px;
     min-height: 100px;  
-    padding: 10px; 
+    padding: 20px 40px; 
 }
 
 button { 
+    font-family: 'OCR A Std', 'Courier New', monospace;
+    font-variant: small-caps;
     margin-bottom: 10px;
-    padding: 3px 4px; 
-    width: 80px;
-    height: 30px;
+    margin-top: 10px;
+    padding: 3px 5px; 
+    width: 100px;
+    height: 40px;
+    min-width: 100px;
+    min-height: 40px; 
+    border-radius: 10px 20px;
+    border: 3px solid aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aquamarine;
+    color: hotpink;
 }
 
 button:hover { 
+    cursor: pointer;
+    background-color: pink;
+    color: darkcyan;
 
 }
+
+a:hover {
+    color: aquamarine;
+}
+
+hr { 
+    margin: 0; 
+    height: 2px; 
+    background-color: aliceblue;
+    border: none; 
+}
+
 
 
 
