@@ -6,8 +6,9 @@
 
 <h2 font-weight="bold">Achieved Outcomes</h2>
 
-<img src="./images/localhost_3000_ (4).png">
 <caption>Almost Full-Screen</caption>
-
-<img src="./images/localhost_3000_ (5).png">
+<img src="./images/localhost_3000_ (4).png">
+<hr> 
 <caption>Small Screen View</caption>
+<img src="./images/localhost_3000_ (5).png">
+
